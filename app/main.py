@@ -1,13 +1,18 @@
 def estoque():
-    print("Bem-vindo ao sistema de estoque")
+    print("Bem-vindo ao sistema de estoque\n")
     
     while True:
-        print("Selecione um número de acordo com seu interesse:")
+        print("Selecione um número de acordo com seu interesse:\n")
         print("1 - Cadastrar novo produto ")
         print("2 - Listar todos os produtos ")
         print("3 - Sair ")
-        p1 = int(input("Digite o número:"))
+        opcao1 = int(input("Digite o número: "))
 
-estoque()
+        if opcao1 == 3:
+            print("Obrigada por usar nosso sistema!")
+            return 'Sistema encerrado'
+
+
+print(estoque())
 
 
