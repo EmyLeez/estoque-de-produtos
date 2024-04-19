@@ -1,4 +1,5 @@
 from utils.registradorEstoque import registradorEstoque
+from utils.retornoEstoque import retornoEstoque
 
 def estoque():
     print("Bem-vindo ao sistema de estoque\n")
@@ -28,12 +29,10 @@ def estoque():
             print(lista1)
             lista1 = registradorEstoque(lista1,dicionario1)
             print(lista1)
-            return True
         
         elif opcao1 == 2:
             print("Produtos cadastrados:")
-            print(opcao1)
-            return '!'
+            retornoEstoque(lista1)
             
 
 print(estoque())
