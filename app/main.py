@@ -1,8 +1,9 @@
+from utils.registradorEstoque import registradorEstoque
+
 def estoque():
     print("Bem-vindo ao sistema de estoque\n")
     
-    lista1 = []
-    
+    lista1 = []   
 
     while True:
         print("Selecione um número de acordo com seu interesse:\n")
@@ -24,8 +25,11 @@ def estoque():
                 'preco': f'{preco}',
                 'quant': f'{qtd}'
             }
-            print(dicionario1)
-            return 'Cadastrado com sucesso!'
+            print(lista1)
+            lista1 = registradorEstoque(lista1,dicionario1)
+            print(lista1)
+            return True
+        
         elif opcao1 == 2:
             print("Produtos cadastrados:")
             print(opcao1)
