@@ -1,0 +1,2 @@
+def registradorEstoque(lista, dicionario):
+    
